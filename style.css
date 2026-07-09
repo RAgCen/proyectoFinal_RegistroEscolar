@@ -64,8 +64,7 @@ header h1 {
 
 /* Página 1: Inicio de Sesión */
 .login-body {
-    margin-left: 40%;
-    margin-top: 10%;
+    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
