@@ -1,0 +1,239 @@
+/* Variables de colores (Inspirados en paleta institucional) */
+/* Es posible declarar más variables según sea necesario para mantener consistencia en el diseño */
+:root {
+    --primary-color: #002B5C; /* Azul oscuro */
+    --secondary-color: #D59F0F; /* Dorado */
+    --bg-color: hsl(160, 16%, 96%);
+    --text-color: #333333;
+    --border-color: #DDDDDD;
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado (Header) */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Página 1: Inicio de Sesión */
+.login-body {
+    margin-left: 40%;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(98, 98, 98), white);
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #3a3a3a;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #001a38;
+}
+
+/* Página 2: Tabla de Calificaciones */
+.table-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.table-section h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.table-section p {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #dadada;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+.student-link {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.student-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Página 3: Perfil del Estudiante */
+.profile-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.profile-image-container {
+    background-color: var(--primary-color);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.profile-info {
+    padding: 40px;
+    flex: 2;
+    min-width: 300px;
+}
+
+.profile-info h1 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.info-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+
+.info-list li strong {
+    color: var(--primary-color);
+    display: inline-block;
+    width: 150px;
+}
